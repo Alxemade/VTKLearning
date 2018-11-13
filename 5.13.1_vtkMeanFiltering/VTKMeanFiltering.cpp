@@ -9,6 +9,12 @@
 #include <vtkRenderer.h>
 #include <vtkRenderWindowInteractor.h>
 
+/*
+1. vtkImageConvolve可以实现简单的卷积操作
+2. vtkImageGaussianSmooth可以实现高斯平滑操作
+3. vtkImageHybridMedian2D可以实现中值滤波
+4. vtkImageAnisotropicDiffusion2D实现各项异性扩散滤波
+*/
 int main(int argn, char *argv[])
 {
 	vtkSmartPointer<vtkJPEGReader>reader =
